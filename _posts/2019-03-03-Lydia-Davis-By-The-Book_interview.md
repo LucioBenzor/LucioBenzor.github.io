@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lydia Davis interview by the Nytimes
+title: "Lydia Davis interview by the NYtimes"
 date: 2019-03-03
 ---
 
