@@ -17,3 +17,6 @@ The hardest part all of this is trying to get Python Anywhere to host it with a 
 
 I have the Lydia Davis bot in mind that I still need to figure how to work. Stored quotes in dictionaries? Hosting them in a Dropbox file as one other programmer did?
 
+
+This twitter bot can be found on [twitter](https://twitter.com/PabloAndDaisy)
+
