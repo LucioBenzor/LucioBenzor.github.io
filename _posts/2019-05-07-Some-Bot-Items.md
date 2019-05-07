@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Some Items"
+title: "Some Bot-related Items"
 date: 2019-05-07
 ---
 
