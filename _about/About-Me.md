@@ -2,7 +2,7 @@
 layout: default
 title: About Me
 ---
-Hi, I'm Lucio yadda yadda yadda
+Hi, I'm Lucio yadda hooka pooka
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
