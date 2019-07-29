@@ -87,7 +87,7 @@ social:
     username: Lucio Benzor
     url: https://www.linkedin.com/in/lucio-benzor-081593167/
     desc: Connect with me on LinkedIn
-    share: true
+    share: false
 
   - name: Google+
     icon: google-plus
