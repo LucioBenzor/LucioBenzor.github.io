@@ -4,7 +4,7 @@ title: "REST APIs and Watson"
 date: 2019-07-24
 ---
 
-  I like to make my life easier by automating redundant tasks. At the job I left months ago, I had a role doing UAT testing and
+  I like to make my life easier by automating redundant tasks. At the job I left months ago, I had a role doing UAT and
 for some of the test cases, made life easier with some Python code that automated some keystrokes and mouse-clicks and
 got a notice when things didn't work quite right.
 
