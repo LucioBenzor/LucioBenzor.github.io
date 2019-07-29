@@ -10,4 +10,4 @@ Hey, I'm Lucio and I enjoy cybersecurity, the ever-widening world of system admi
 
 Before that, I was a part of a UAT team acting as a general subject matter expert on a propriatary fingerprint web app where I cut my teeth on DR principales on a massive enterprise scale
 
-I graduated Magna cum laude from the University of Georgia in 2012 with a degree in English with a concentration in rhetoric and composition 
+I graduated Magna cum laude from the University of Georgia in 2012 with a degree in English and a concentration in rhetoric and composition 
