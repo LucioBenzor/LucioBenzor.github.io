@@ -4,9 +4,8 @@ title: "RDP into a Linux VM through Azure"
 date: 2019-08-07
 ---
 
-Part of my job involves me testing vulnerability scanners and running them through the paces before recommending them. In the endeavor,
-I use a series of Azure VMs that I've domain-joined that I've purposely left vulnerable to see if the scanners can pick up on the exact
-vulnerabilities.
+Part of my job involves testing vulnerability scanners and running them through the paces before recommending them. In this endeavor,
+I use a series of Azure VMs that I've domain-joined as a sandbox.
 
 I've been wanting to test these scanners through a Linux Ubuntu VM and decided to boot one up in Azure and configure it to be able to employ 
 Microsoft Remote Desktop to access it in the same way as my other VMs. By default Linux doesn't play well with Microsoft RDP and port 3389 is closed  
