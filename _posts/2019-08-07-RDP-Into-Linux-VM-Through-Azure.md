@@ -19,12 +19,11 @@ Microsoft Remote Desktop to access it in the same way as my other VMs. By defaul
 2. Copy the SSH command into a command prompt window or powershell. You'll be prompted for the password of the Linux VM
 3. If the connection is successful, you'll see <nameOfVM>@<nameOfVM>:~$
 4. run the following to install xfce:
-
+  
 ```shell
 sudo apt-get update
 sudo apt-get install xfce4
 ```
-
 5. then run the following to install and enable xrdp, an rdp client for Linux: 
 
 ```shell
