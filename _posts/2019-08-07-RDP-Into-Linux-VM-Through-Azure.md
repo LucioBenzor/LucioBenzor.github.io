@@ -14,36 +14,36 @@ Microsoft Remote Desktop to access it in the same way as my other VMs. By defaul
 *note: Ubuntu server only has a command-line interface. Ubuntu 1604 LTS is the OS I choose and has a GUI.*  
 
 # Set Up
-
-1. SSH into the VM. From the Azure portal, under connect, you'll have a choice of RDP or SSH. Copy the SSH command.
-2. Copy the SSH command into a command prompt window or powershell. You'll be prompted for the password of the Linux VM
-3. If the connection is successful, you'll see <nameOfVM>@<nameOfVM>:~$
-4. run the following to install xfce:
+<ol>
+  <li> SSH into the VM. From the Azure portal, under connect, you'll have a choice of RDP or SSH. Copy the SSH command.</li>
+  <li> Copy the SSH command into a command prompt window or powershell. You'll be prompted for the password of the Linux VM.</li>
+  <li>If the connection is successful, you'll see <nameOfVM>@<nameOfVM>:~$</li>
+  <li> run the following to install xfce:</li>
   
 ```shell
 sudo apt-get update
 sudo apt-get install xfce4
 ```
-5. then run the following to install and enable xrdp, an rdp client for Linux: 
+  <li> then run the following to install and enable xrdp, an rdp client for Linux:</li>
 
 ```shell
 sudo apt-get install xrdp
 sudo enable xrdp
 ```
 
-6. Set the desktop environment for xrdp to use with the following: 
+  <li> Set the desktop environment for xrdp to use with the following:</li>
 
 ```shell
 echo xfce4-session >~/.xsession
 ```
 
-7. Then restart the service:
+  <li> Then restart the service:</li>
 
 ```shell
 sudo service xrdp restart
 ```
 
-8. Create a network rule in the Azure GUI for the VM to allow RDP. Go to {NameOfVm}>Networking>Inbound port rules>Add inbound port rule
+  <li> Create a network rule in the Azure GUI for the VM to allow RDP. Go to {NameOfVm}>Networking>Inbound port rules>Add inbound port rule
 
 and create a rule with the following parameters:
 
@@ -57,7 +57,7 @@ and create a rule with the following parameters:
 |Action | Allow
 |Priority | 300
 |Name | RDP rule
-
+</li>
 9. Go back to the Linux VM and double-check the 3389 rule and the rdp by entering:
 
 ```shell
@@ -67,7 +67,7 @@ sudo netstat -plnt | grep rdp
 
 10. Go back to Azure and download the RDP file and run it to establish the connection!
 
-
+</ol>
 **That's It!!**
 
 
