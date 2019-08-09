@@ -9,7 +9,7 @@ A good resource on Mardown can be found [here on Github](https://help.github.com
 
 Code test
 
-```python
+~~~Python
 print('Hello World!')
-```
+~~~
 
