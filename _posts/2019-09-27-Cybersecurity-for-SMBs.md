@@ -34,6 +34,6 @@ not even just considering the fact that this authentication method sometimes ten
 To truly buttress your cyber efforts, create a DMARC record which would block bad actors from spoofing *your* company email address to your own employees.
 
 7. **Patch everything**: Back in 2017, Equifax was hit by an exploit in Apache Struts, a popular open-source web server software that had a 
-patch available for months. Patching your operating systems is important but rember to patch the other software your business critical infrastructure runs on.
+patch available for months. Patching your operating systems is important but remember to patch the other software your business critical infrastructure runs on.
 
 Here's a link to the Symantec [report](https://www.symantec.com/content/dam/symantec/docs/reports/istr-24-2019-en.pdf)
