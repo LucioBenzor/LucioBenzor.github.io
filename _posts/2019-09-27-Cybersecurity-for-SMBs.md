@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cybersecurity tips for Small & Medium Businessess"
+title: "Cybersecurity tips for Small & Medium Businesses"
 date: 2019-09-27
 ---
 
