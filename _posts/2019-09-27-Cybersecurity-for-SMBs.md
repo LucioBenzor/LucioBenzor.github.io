@@ -36,3 +36,4 @@ To truly butress your cyber efforts, create a DMARC record which would block bad
 7. **Patch everything**: Back in 2017, Equifax was hit by an exploit in Apache Struts, a popular open-source web server software that had a 
 patch available for months. Patching your operating systems is important but rember to patch the other software your business critical infrastructure runs on.
 
+Here's a link to the Symantic [report](https://www.symantec.com/content/dam/symantec/docs/reports/istr-24-2019-en.pdf)
