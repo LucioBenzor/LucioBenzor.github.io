@@ -13,19 +13,19 @@ addresses. And if you're a small business and feel the need to safeguard your da
 again according to that Symantec report. Even if users aren't local admins over their computers, chances are they are allowed to run powershell.
 
 2. **Have off-site backups**: The most popular vendor in this field is Veeam. Their community edition allows you to try out their product 
-for free, forever, in a limited capacity. It allows you to back up 10 Virtual Machines and On-Premise Servers. On an added note to this:
-conduct Disaster Recovery testing as part of a larger business continuity strategy to confirm backups are sufficient to replicate the production environment
+for free, forever, in a limited capacity. It allows you to back up 10 Virtual Machines and On-Premise Servers. But also look at Azure backup and Site recover. They're intuitive and bill based on usgae. On an added note to this:
+conduct Disaster Recovery testing as part of a larger business continuity strategy to confirm backups are sufficient to replicate the production environment.  Backups are not a silver bullet though. When a threat actor successfuly accesses your network and gets domain-admin access, they typically won't turn on a switch to encrypt all your files. Most often they'll do more reconnessence to get a lay of the landscape.
 
 3. **ENABLE MFA ON EVERYTHING**: Even with good training, an employee that fell victim to a spearfishing attack might give up a username and password without realizing it.
 A threat actor would normally have everything they need but with MFA, they'll be hit with a challenge prompt (say a 6 digit PIN) before 
 they can really do serious damage. For an added layer of security,
-and to prevent employees from making their PINs 123456, employ a dictionary that prevents most commonly guessed password and PINs. 
+and to prevent employees from making their PINs 123456, employ a dictionary that prevents most commonly guessed password and PINs. Those 20-odd Texan towns were hit simultanously because their MSPs RMM (Remote monitoring and management) software was compromised.
 
 4. **Enable Geo fencing**: This especially holds true for SMBs where employees would not frequently have to leave the country. Azure AD has a very intuitive 
-geo-fencing configuration to prevent international threat actors from employing 
+geo-fencing configuration to prevent international threat actors from doing much with stolen credentials
 
-5. **Block outbound network traffic to Pastebin** A popular code-hosting site, Pastebin has been used since the early 2000's in hosting
-malicious code and making it essentially a remote-execution server.
+5. **Put RDP behind a VPN** Generally, only allow access to network recourses from inside your network. Practically, this means only
+employees connected to the company's VPN can access those assets. Internet-facing RDPs are a common attack vector in cyber attacks.
 
 6. **Block emails that fail SPF**: Sender Policy Framework is part of the triad of email authentication. Next to DMARC (Domain-based Message Authentication, Reporting & Conformance) 
 and DKIM (Domain Keys Identified Mail), SPF allows the owner of the domain to specify which IP addresses are permitted to send mail. Basically, creating
