@@ -10,7 +10,7 @@ Texan towns hit simultaneously. But ransomware, and malware in general, can be b
 addresses with ease. And if you're a small business and feel the need to safeguard your data consider taking these proactive steps.
 
 1. **Disable PowerShell** : While a handy tool for any sysadmin, the use of malicious PowerShell scripts increased 1000% since last year,
-again according to that Symantec report. Even if users aren't local admins over their computers, chances are they are allowed to run powershell.
+again according to that Symantec report (at the end of the post below). Even if users aren't local admins over their computers, chances are they are allowed to run powershell.
 
 2. **Have off-site backups**: The most popular vendor in this field is Veeam. Their community edition allows you to try out their product 
 for free, forever, in a limited capacity. It allows you to back up 10 Virtual Machines and On-Premise Servers. But also look at Azure backup and Site recover. They're intuitive and bill based on usgae. On an added note to this:
@@ -19,7 +19,7 @@ conduct Disaster Recovery testing as part of a larger business continuity strate
 3. **ENABLE MFA ON EVERYTHING**: Even with good training, an employee that fell victim to a spearfishing attack might give up a username and password without realizing it.
 A threat actor would normally have everything they need but with MFA, they'll be hit with a challenge prompt (say a 6 digit PIN) before 
 they can really do serious damage. For an added layer of security,
-and to prevent employees from making their PINs 123456, employ a dictionary that prevents most commonly guessed password and PINs. Those 20-odd Texan towns were hit simultanously because their MSPs RMM (Remote monitoring and management) software was compromised. consider Azure AD to help in this effort.
+and to prevent employees from making their PINs 123456, employ a dictionary that prevents most commonly guessed password and PINs. Those 20-odd Texan towns were hit simultanously because their MSPs RMM (Remote monitoring and management) software was compromised and because user accounts did not have MFA enabled. Consider Azure AD native MFA function to help in this effort.
 
 4. **Enable Geo fencing**: This especially holds true for SMBs where employees would not frequently have to leave the country. Azure AD has a very intuitive 
 geo-fencing configuration to prevent international threat actors from doing much with stolen credentials. Of course, if they're using a VPN, this extra layer of protection may be moot. Still, it's worth the effort.
