@@ -21,7 +21,7 @@ Microsoft introduced Azure AD to help manage those web-based services with the s
 
 ## Key considerations ##
 
-If you're a small to medium sized company with zero on-premises workloads that rely on AD or are in the process of migrating existing workloads to the cloud, you might wonder if Azure AD should be the sole Identity provider. Before moving forward with that project, consider these nuances:
+If you're a small to medium sized company with zero on-premises workloads that rely on AD or are in the process of migrating existing workloads to the cloud, you might wonder if Azure AD should be the sole Identity provider. This is actually a viable option. Before moving forward with that project, consider these nuances:
 
 1. Because there are so many networking technologies (firewalls, Reverse Proxies, DMZ, VLANS) created to protect on-premises workloads, those safeguards don't exist for SaaS applications. In good conscience, when I recommend migrating from AD to Azure AD, I specify companies consider Microsoft's Enterprise Mobility and Security E3 licenses to implement information security measures with device management to keep all company data that's outside the organization's boundaries secure. A single EMS E3 license = 1 Azure AD P1 License, 1 Intune License, and 1 Azure Information Protection License.
 
