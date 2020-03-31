@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Modern Device Management with Intune"
-date: 2019-03-24
+date: 2020-03-24
 ---
 
 Disclaimer: As a Microsoft employee, the below opinions are mine alone and not a reflection of Microsoft.
