@@ -13,7 +13,7 @@ Chief among their concerns are protecting devices that are not joined to the cor
 updates. The traditional strategy here is to have users connect to the corporate VPN in order to gain access to company software, which also
 extends the Infrastructure security umbrella of Proxy Services, Web Filtering, and sometimes EDR to that device. 
 
-Intune steps in here to offer Mobile Device Management and Mobile Application Management to devices the same if they were joined to Active
+Intune steps in here to offer Mobile Device Management and Mobile Application Management to devices the same vein as if they were joined to Active
 Directory and bound to Group Policy. Mobile Application Management refers to rules and measures that rest on the application no matter what device they're being accessed
 on. Practically, this means a company can extend access to their O365 and internal applications to smartphones, tablets, and Win 10 devices
 without having to compromise data integrity policies or device security policies. A company may make a MAM policy forbidding accessing
