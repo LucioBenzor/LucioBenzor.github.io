@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Modern Device Management with Intune"
+title: "Modern Device Management with Intune - Part 1"
 date: 2020-03-24
 ---
 
