@@ -4,7 +4,7 @@ title: "Modern Device Management with Intune - Part 1"
 date: 2020-03-24
 ---
 
-Disclaimer: As a Microsoft employee, the below opinions are mine alone and not a reflection of Microsoft.
+Disclaimer: As a Microsoft employee, the below opinions are mine alone and do not necessarily reflect the opinions of Microsoft.
 
 Part of an exciting development professionally is being able to speak and show more broadly to an engaged audience cybersecurity
 best practices and demonstrate how Microsoft is taking steps to address these gaps as more and more workers are working remotely.
