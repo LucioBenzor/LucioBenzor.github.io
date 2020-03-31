@@ -20,7 +20,7 @@ without having to compromise data integrity policies or device security policies
 the company sharepoint site from a device that's jailbroken, for example. A more aggressive policy might be restricting copy/paste and print
 functionality for Outlook on any device that doesn't pass an MFA prompt, and isn't Hybrid-Joined.
 
-Mobile Device Management steps this up by requiring a company portal application to be installed on the device. Found in the Windows store,
+Mobile Device Management steps this up by requiring a company portal application to be installed on the device, enrolling in device management with Intune, which allows IT admins to wipe, push out applications, wifi configs. etc on a device they now manage. Found in the Windows store,
 App Store, and Google Play Store, the company portal application functions as a constant tether to the corporate network and allows Admins
 some of the great functions they enjoy with SCCM, and Group Policy. They can deploy applications to the company portal app for users to download.
 In place of a standard Win 10 .iso image that gets manually input for each device, the user can login to their Work account on any Win 10 device
