@@ -8,6 +8,7 @@ MFA is the gold standard control for information security. In this post, I'll sh
 as well as a one big change you should consider making for this to take effect. I should note from the onset that this applies to all guests of the organization - even those without an O365 subscription (like a gmail accounts).
 
 # Setting up SharePoint and OneDrive for guest access MFA
+
 For some reason, SharePoint and OneDrive have their own sharing policies that go out of scope when locking down guest access. This means
 users can share content from both services to external users without those users having to reply to an MFA prompt to view the content.
 
@@ -36,3 +37,9 @@ This next step is setting the enforcement mechanism we're triggering in order fo
 Take a hard look at that last frame. We're granting access to the external user provided the pass an MFA prompt. We can be a little flexible here and say, toggle "require device to be marked compliant" additionally and as long as the device meets your compliance policy, they can access the resource.
 
 In a follow up post to this I'll show you using the Session pane with Conditional Access App Control through Microsoft's CASB, Microsoft Cloud App Security.
+
+# What MFA methods are available to my users?
+
+First, [here's the up-to-date list](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods) the current authentications methods available to a company with Azure AD P1/P2
+
+
