@@ -14,4 +14,4 @@ users can share content from both services to external users without those users
 To remedy this: go to the SharePoint Admin Portal > Policies > Sharing and pull down the toggle to "Content can be shared with: Existing
 guest"
 
-<img src="{{ site.baseurl }}/assets/SharePointExternalSharing.png>
+<img src="{{ site.baseurl }}/assets/SharePointExternalSharing.png">
