@@ -40,6 +40,10 @@ In a follow up post to this I'll show you using the Session pane with Conditiona
 
 # What MFA methods are available to my users?
 
-First, [here's the up-to-date list](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods) the current authentications methods available to a company with Azure AD P1/P2
+First, [here's the up-to-date list](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods) with the authentications methods available to a company with Azure AD P1/P2.
+To set MFA options for your users, lets go to to the Azure AD Dashboard > Security > "Additional cloud-based MFA settings"
+
+<img src="{{ site.baseurl }}/assets/MFAMenu1.png">
+
 
 
