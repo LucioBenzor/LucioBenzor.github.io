@@ -32,3 +32,7 @@ This next step is setting the enforcement mechanism we're triggering in order fo
 
 <img src="{{ site.baseurl }}/assets/GuestAccess3.png">
 
+
+Take a hard look at that last frame. We're granting access to the external user provided the pass an MFA prompt. We can be a little flexible here and say, toggle "require device to be marked compliant" additionally and as long as the device meets your compliance policy, they can access the resource.
+
+In a follow up post to this I'll show you using the Session pane with Conditional Access App Control through Microsoft's CASB, Microsoft Cloud App Security.
