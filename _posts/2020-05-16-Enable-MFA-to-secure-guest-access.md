@@ -45,5 +45,8 @@ To set MFA options for your users, lets go to to the Azure AD Dashboard > Securi
 
 <img src="{{ site.baseurl }}/assets/MFAMenu1.png">
 
+From here you can select any of these options (FIDO and OATH tokens can be configured back in the Azure AD portal)
+
+<img src="{{ site.baseurl }}/assets/MFAMenu2.png">
 
 
