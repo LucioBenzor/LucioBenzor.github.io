@@ -24,3 +24,11 @@ select "select users and groups" and toggle "All guests and external users"
 
 <img src="{{ site.baseurl }}/assets/GuestAccess1.png">
 
+From here, lets go down to Cloud Apps or Actions and select which applications you'd like the policy to apply to. Since we're making this change for all guests that have external access, we'll cast a wide net and shoot for all cloud apps
+
+<img src="{{ site.baseurl }}/assets/GuestAccess2.png">
+
+This next step is setting the enforcement mechanism we're triggering in order for the affected users accessing the resource
+
+<img src="{{ site.baseurl }}/assets/GuestAccess3.png">
+
