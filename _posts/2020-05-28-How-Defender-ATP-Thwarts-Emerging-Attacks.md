@@ -21,8 +21,13 @@ Anyway, one of the core copetencies it brings to the table and distiguishes itse
 CrowdStrike, Cylance, and PaloAlto is Microsoft's device hardening measures - Attack Surface Reduction. Another major advantage is that
 it's Agentless. Sneaky Microsoft built the sensor right into the Operating System inexorably.
 
-Microsoft's Attack Surface reduction rules are efforts to overcome the common vulnerabilities sophisticated attacks use to compromise a
-individual computer
+# What is Attack Surface Reduction?
+
+Microsoft's Attack Surface Reduction rules (reproduced below) are efforts to overcome the common vulnerabilities sophisticated attacks use to compromise a
+individual computer. These rules though are only a subset of the Attack Surface Reduction capabilities Defender ATP offers and are the most compelling proactive feature of the service.
+
+
+<img src="{{ site.baseurl }}/assets/DefenderATP2.png">
 
 |     Rule name                                                                                             |
 |-----------------------------------------------------------------------------------------------------------|
@@ -42,4 +47,7 @@ individual computer
 |    [Block Adobe Reader from creating child processes](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)                                                       |
 |    [Block persistence through WMI event subscription](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-persistence-through-wmi-event-subscription)                                                       |
 
-
+# What Are These Emerging Threats?
+Why are these rules compelling and cumulatively, how do they coalesce to thwart emerging threats?
+According to Symantec's last Internet Security Threat Report, 48% of Malicious email attachments are office files. This is up from 5% in 2017.
+<img src="{{ site.baseurl }}/assets/DefenderATP3.png">
