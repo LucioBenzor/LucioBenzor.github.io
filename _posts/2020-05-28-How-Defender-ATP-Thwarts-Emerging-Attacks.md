@@ -51,3 +51,8 @@ individual computer. These rules though are only a subset of the Attack Surface 
 Why are these rules compelling and cumulatively, how do they coalesce to thwart emerging threats?
 According to Symantec's last Internet Security Threat Report, 48% of Malicious email attachments are office files. This is up from 5% in 2017.
 <img src="{{ site.baseurl }}/assets/DefenderATP3.png">
+
+As the report goes on to note: 
+> Use of malicious PowerShell scripts increased by 1,000 percent in 2018, as attackers continued the movement towards living off the land techniques. A common attack scenario uses Office macros to call a PowerShell script, which in turn downloads the malicious payload. Office macro downloaders accounted for the majority of downloader detections, while VBS.Downloader and JS.Downloader threats declined.
+
+Looking back at our Attack Surface Reduction Rules, can you spot which ones would go into effect with these attacks?
