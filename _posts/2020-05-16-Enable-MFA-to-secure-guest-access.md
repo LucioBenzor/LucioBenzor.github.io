@@ -15,7 +15,9 @@ users can share content from both services to external users without those users
 To remedy this: go to the SharePoint Admin Portal > Policies > Sharing and pull down the toggle to "Content can be shared with: Existing
 guest"
 
+<a href="{{ site.baseurl }}/assets/SharePointExternalSharing.png">
 <img src="{{ site.baseurl }}/assets/SharePointExternalSharing.png">
+<a/>
 
 # MFA with a Conditional Access Policy
 
@@ -23,16 +25,21 @@ Onto the heavy lifting. We'll configure MFA with a conditional access policy. Th
 license. Let's go ahead and give this CA policy an easy to remember name. Under assignments, select users and groups. From this panel
 select "select users and groups" and toggle "All guests and external users"
 
+<a href="{{ site.baseurl }}/assets/GuestAccess1.png">
 <img src="{{ site.baseurl }}/assets/GuestAccess1.png">
+<a/>
 
 From here, lets go down to Cloud Apps or Actions and select which applications you'd like the policy to apply to. Since we're making this change for all guests that have external access, we'll cast a wide net and shoot for all cloud apps
 
+<a href="{{ site.baseurl }}/assets/GuestAccess2.png">
 <img src="{{ site.baseurl }}/assets/GuestAccess2.png">
+<a/>
 
 This next step is setting the enforcement mechanism we're triggering in order for the affected users accessing the resource
 
+<a ref="{{ site.baseurl }}/assets/GuestAccess3.png">
 <img src="{{ site.baseurl }}/assets/GuestAccess3.png">
-
+<a/>
 
 Take a hard look at that last frame. We're granting access to the external user provided the pass an MFA prompt. We can be a little flexible here and say, toggle "require device to be marked compliant" additionally and as long as the device meets your compliance policy, they can access the resource.
 
@@ -43,10 +50,13 @@ In a follow up post to this I'll show you using the Session pane with Conditiona
 First, [here's the up-to-date list](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods) with the authentications methods available to a company with Azure AD P1/P2.
 To set MFA options for your users, lets go to to the Azure AD Dashboard > Security > "Additional cloud-based MFA settings"
 
+<a href="{{ site.baseurl }}/assets/MFAMenu1.png">
 <img src="{{ site.baseurl }}/assets/MFAMenu1.png">
+<a/>
 
 From here you can select any of these options (FIDO and OATH tokens can be configured back in the Azure AD portal)
 
+<a href="{{ site.baseurl }}/assets/MFAMenu2.png">
 <img src="{{ site.baseurl }}/assets/MFAMenu2.png">
-
+<a/>
 
