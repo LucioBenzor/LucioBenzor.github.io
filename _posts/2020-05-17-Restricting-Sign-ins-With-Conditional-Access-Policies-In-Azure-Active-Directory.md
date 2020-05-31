@@ -17,31 +17,43 @@ First, we'll go to our Azure Active Directory Admin Center. Then to the Azure AD
 As you can tell, I already have two locations created. Our Atlanta Office and Our outpost in Haiti. You can create named locations to point to Specific IP address ranges (and mark
 those addresses as a trusted location" or a single or multiple countries or regions.
 
+<a href="{{ site.baseurl }}/assets/TrustedLocationCA1.png">
 <img src="{{ site.baseurl }}/assets/TrustedLocationCA1.png">
-
+<a/>
+  
 From here we worked on splitting users up into country-specific groups so the Conditional Access Policy can apply to users in a single country for ease of use. E.G., our Atlanta-based CA policy affects only users in the Atlanta Office group, while the Peru-based CA policy affects our users in Peru.
 
 Let's go ahead and navigate to the Conditional Access pane and create a new Conditional Access Policy. I'm calling this one Trusted Locations Sign in only - Atlanta and as you can see I've added our Atlanta users there. 
 
+<a href="{{ site.baseurl }}/assets/TrustedLocationCA2.png">
 <img src="{{ site.baseurl }}/assets/TrustedLocationCA2.png">
+<a/>
 
 Stop here and decide if there's some C-level executives you'd like to exclude if they're the type to travel on a moment's notice. We wouldn't want to block their access. Just head on over to that Exclude pane and shoot them over in the exclusion group (best practice here is to exclude groups and not individual members).
 
 Select all cloud apps in the "Cloud Apps or Actions" panel
 
+<a href="{{ site.baseurl }}/assets/TrustedLocationCA3.png">
 <img src="{{ site.baseurl }}/assets/TrustedLocationCA3.png">
+<a/>
 
 Lets go to the Conditions Panel and go to Locations and configure it to include "Any Location".
 
+<a href="{{ site.baseurl }}/assets/TrustedLocationCA4.png">
 <img src="{{ site.baseurl }}/assets/TrustedLocationCA4.png">
+<a/>
 
 Immediately after, lets go to exclude and select the Atlanta Office
 
+<a href="{{ site.baseurl }}/assets/TrustedLocationCA5.png">
 <img src="{{ site.baseurl }}/assets/TrustedLocationCA5.png">
+<a/>
 
 Let's finish this up by going to the Grant panel at the bottom and selecting "Block Access".
 
+<a href="{{ site.baseurl }}/assets/TrustedLocationCA6.png">
 <img src="{{ site.baseurl }}/assets/TrustedLocationCA6.png">
+<a/>
 
 Enabling this policy will block any users in the Atlanta Office Group from accessing cloud resources from anywhere in the world except the Atlanta Office (really just anywhere in the US)
 
