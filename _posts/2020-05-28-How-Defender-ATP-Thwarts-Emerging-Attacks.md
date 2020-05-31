@@ -28,8 +28,9 @@ it's Agentless. Sneaky Microsoft built the sensor right into the Operating Syste
 Microsoft's Attack Surface Reduction rules (reproduced below) are efforts to overcome the common vulnerabilities sophisticated attacks use to compromise a
 individual computer. These rules though are only a subset of the Attack Surface Reduction capabilities Defender ATP offers and are the most compelling proactive feature of the service.
 
-
+<a href="{{ site.baseurl }}/assets/DefenderATP2.png">
 <img src="{{ site.baseurl }}/assets/DefenderATP2.png">
+<a/>
 
 |     Rule name                                                                                             |
 |-----------------------------------------------------------------------------------------------------------|
@@ -52,7 +53,10 @@ individual computer. These rules though are only a subset of the Attack Surface 
 # What Are These Emerging Threats?
 Why are these rules compelling and cumulatively, how do they coalesce to thwart emerging threats?
 According to Symantec's last [Internet Security Threat Report](https://docs.broadcom.com/doc/istr-24-2019-en), 48% of Malicious email attachments are office files. This is up from 5% in 2017.
+
+<a href="{{ site.baseurl }}/assets/DefenderATP3.png">
 <img src="{{ site.baseurl }}/assets/DefenderATP3.png">
+<a/>
 
 As the report goes on to note: 
 > Use of malicious PowerShell scripts increased by 1,000 percent in 2018, as attackers continued the movement towards living off the land techniques. A common attack scenario uses Office macros to call a PowerShell script, which in turn downloads the malicious payload. Office macro downloaders accounted for the majority of downloader detections, while VBS.Downloader and JS.Downloader threats declined.
