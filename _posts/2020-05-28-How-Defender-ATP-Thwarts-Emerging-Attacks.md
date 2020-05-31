@@ -15,7 +15,9 @@ There's a whole range of products and services that exists specifically to comba
 Microsoft's own Endpoint Detection and Response solution. You can rightfully think of it as a host-based intrusion prevention/detection system.
 Below is how Microsoft envisions all their services tie together to combat the lifecycle of a typical web-based attack
 
+<a href="{{ site.baseurl }}/assets/DefenderATP1.png">
 <img src="{{ site.baseurl }}/assets/DefenderATP1.png">
+ <a/>
 
 Anyway, one of the core copetencies it brings to the table and distiguishes itself from other major players in the field like Carbon Black,
 CrowdStrike, Cylance, and PaloAlto is Microsoft's device hardening measures - Attack Surface Reduction. Another major advantage is that
