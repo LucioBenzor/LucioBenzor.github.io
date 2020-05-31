@@ -3,10 +3,13 @@ perimeter are untrusted and potentially compromised until proven otherwise.
 
 If you're unfamiliar with the way security architecture has been run, here's a handy image to illustrate the difference
 
+<a href="{{ site.baseurl }}/assets/ZeroTrust1.jpg">
 <img src="{{ site.baseurl }}/assets/ZeroTrust1.jpg">
+<a/>
 
+<a href="{{ site.baseurl }}/assets/ZeroTrust2.jpg">
 <img src="{{ site.baseurl }}/assets/ZeroTrust2.jpg">
-
+<a/>
 
 Whereas traditional permimeter-based security was concerned with making only the absolute necessary available outside the network (via DMZ),
 with a host of appliances monitor network traffic, inspecting packets, Firewalls, Network Intrusion Detection systems promulagated to ensure
