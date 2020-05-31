@@ -17,7 +17,7 @@ Below is how Microsoft envisions all their services tie together to combat the l
 
 <a href="{{ site.baseurl }}/assets/DefenderATP1.png">
 <img src="{{ site.baseurl }}/assets/DefenderATP1.png">
- <a/>
+<a/>
 
 Anyway, one of the core copetencies it brings to the table and distiguishes itself from other major players in the field like Carbon Black,
 CrowdStrike, Cylance, and PaloAlto is Microsoft's device hardening measures - Attack Surface Reduction. Another major advantage is that
