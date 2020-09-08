@@ -5,7 +5,7 @@ date: 2020-09-07
 ---
 
 With the way the world is today, most working adults whose jobs can be done remotely are being asked to work remotely. On the IT side of things, great pains have
-been made to accomplish this. There have been investments in in VPN and firewalls and consultants have been brought on board to help architecture how to accomplish
+been made to accomplish this. There have been investments in VPNs and firewalls and consultants have been brought on board to help architecture how to accomplish
 allowing employees to access the resources they've enjoyed at the office and continuing to be at their productive best.
 
 Securing this connection has often been seen as an afterthought, if it's been a part of the conversation at all.
