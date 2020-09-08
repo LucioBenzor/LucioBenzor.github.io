@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Securing Remote Work (Digital Event)"
+title: "I Deliver A Talk On Securing Remote Work (Webinar)"
 date: 2020-09-07
 ---
 
