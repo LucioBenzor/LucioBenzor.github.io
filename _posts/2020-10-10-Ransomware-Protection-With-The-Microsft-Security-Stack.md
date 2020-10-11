@@ -69,4 +69,9 @@ isolated environment. And from there, we can make further restrictions, like blo
 
 For our fourth wheel, we'll configure [Controlled Folder Access](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
 that was specifically designed to thwart Ransomware. Basically, this blocks untrusted applications from accessing protected folders. These protected folders are specified when
-controlled folder access is configured.
+controlled folder access is configured. Lets say our users recieved an email that O365ATP trusted and downloaded a link that bypassed App-V and smart screen. The ransomeware payload would be blocked from accessing the folders we're expressly protecting. 
+
+***How can we test this?***
+1. Deploy a VM with an OS image your typical users see and grab some ransomeware from white-hat forums
+2. Visit the [Defender ATP test ground](https://demo.wd.microsoft.com/) and use the ASR rules script, CFA script, Smartscreen test script to test your effort chance of success against the real deal.
+
