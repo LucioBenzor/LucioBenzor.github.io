@@ -5,31 +5,31 @@ date: 2020-10-10
 ---
 
 Some time ago, I wrote a post on Defender ATP (now called Microsoft Defender for Endpoint) and the OS hardening measures it offers under attack surface reduction rules that
-are useful for crafting a client that's resiliant against next gen attacks.
+are useful for crafting a client that's resilient against next gen attacks.
 
 But seeing as most admins have projects with certain outcomes in mind, I wanted to briefly outline the M365 platforms that will aid in a project
-with total ransomware proection as it's outcome. 
+with total ransomware protection as it's outcome. 
 
-After setting expectations and a sucess criteria likely with a OS build to test actual ransomware against, let's talk about the platforms we'll be using. This assumes you have full
+After setting expectations and a success criteria likely with a OS build to test actual ransomware against, let's talk about the platforms we'll be using. This assumes you have full
 M365 E5 or the E5 security license.
 
 Here's the platforms we'll make use of:
 
 * Microsoft Cloud App Security
 * Azure Active Directory P2
-* Defender for Endpoint/ Micorosft Enterprise E5
-* Office 365 Adavanced Threat Protection P2
+* Defender for Endpoint/ Microsoft Enterprise E5
+* Office 365 Advanced Threat Protection P2
 
 ***What, exactly are we being protected from?***
 
-Bad actors can affect our systems and users a whole lot of different ways. Ransomeware, specifically, is a type of attack that encrypts files, folders, or the whole hard drive with the intent to extract
-a ransom from the user or organization. To combat this, we'll need to find a way to make our files and folders resiliant. Because ransomeware is mainly spread via email, we'll need 
+Bad actors can affect our systems and users a whole lot of different ways. Ransomware, specifically, is a type of attack that encrypts files, folders, or the whole hard drive with the intent to extract
+a ransom from the user or organization. To combat this, we'll need to find a way to make our files and folders resilient. Because ransomware is mainly spread via email, we'll need 
 some strong controls in place to interrogate the content being displayed to our users and the senders themselves. And we need to accomplish this with a series of controls that
 balances security without compromising the productivity of the user base.
 
 ***How to accomplish this***
 
-Let's first start by configuring our **Email Security** with O365 by running the Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) Powershell module to get the current setting for O365 ATP
+Let's first start by configuring our **Email Security** with O365 by running the Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) PowerShell module to get the current setting for O365 ATP
 and recommended settings. The module can be downloaded [here](https://www.powershellgallery.com/packages/ORCA/). Email security is already likely something you have in the form of
 Exchange Online Protection configured or maybe the Premium 1 license of O365 Advanced Threat Protection.
 
@@ -40,7 +40,7 @@ protect users from malicious links directing them to low-reputation sites and fr
 **If you're a new admin and need additional guidance on email security, Microsoft has a good primer [here](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)**.
 
 
-Lets next deploy the whole suite of **Attack Surface Reduction rules** offered by Defender for Endpoint. Taking special attention that we know ahead of time we're blocking Macro's. Excel powerusers should be kept in mind for this deployment.
+Lets next deploy the whole suite of **Attack Surface Reduction rules** offered by Defender for Endpoint. Taking special attention that we know ahead of time we're blocking Macro's. Excel power users should be kept in mind for this deployment.
 
 |     Rule name                                                                                             |
 |-----------------------------------------------------------------------------------------------------------|
@@ -63,15 +63,18 @@ Lets next deploy the whole suite of **Attack Surface Reduction rules** offered b
 These rules will comprise our 2nd line of defense after email security.
 
 On top of that, our third pillar meant to capture other stray variable is deploying [Application Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) offered with Windows Enterprise E5. Basically, it's add-on that
-allows users to acces sites that are untrusted (I.E not explictly whitelisted, or not seen a great deal across the network) but in a hyper-V-based browser container. If our employee
-recieves a link that redirects them to a webpage that O365 ATP allows them to access, and Smart Screen allows them to access, they'll be able to access the webpage, but in an 
+allows users to access sites that are untrusted (I.E not explicitly whitelisted, or not seen a great deal across the network) but in a Hyper-V-based browser container. If our employee
+receives a link that redirects them to a webpage that O365 ATP allows them to access, and Smart Screen allows them to access, they'll be able to access the webpage, but in an 
 isolated environment. And from there, we can make further restrictions, like blocking copy/paste functionalities etc.
 
 For our fourth wheel, we'll configure [Controlled Folder Access](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
 that was specifically designed to thwart Ransomware. Basically, this blocks untrusted applications from accessing protected folders. These protected folders are specified when
-controlled folder access is configured. Lets say our users recieved an email that O365ATP trusted and downloaded a link that bypassed App-V and smart screen. The ransomeware payload would be blocked from accessing the folders we're expressly protecting. 
+controlled folder access is configured. Lets say our users received an email that O365ATP trusted and downloaded a link that bypassed Application guard and SmartScreen. The ransomware payload would be blocked from accessing the folders we're expressly protecting. 
 
 ***How can we test this?***
-1. Deploy a VM with an OS image your typical users see and grab some ransomeware from white-hat forums
-2. Visit the [Defender ATP test ground](https://demo.wd.microsoft.com/) and use the ASR rules script, CFA script, Smartscreen test script to test your effort chance of success against the real deal.
+1. Deploy a VM with an OS image your typical users see and grab some ransomware from white-hat forums
+2. Visit the [Defender ATP test ground](https://demo.wd.microsoft.com/) and use the ASR rules script, CFA script, SmartScreen test script to test your effort chance of success against the real deal.
 
+<a href="{{ site.baseurl }}/assets/DefenderATPDemoSite.png">
+<img src="{{ site.baseurl }}/assets/DefenderATPDemoSite.png">
+<a/>
