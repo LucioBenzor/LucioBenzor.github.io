@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Identity And Access Management And Its Role In Cloud Security or Another Reason to Deploy MFA"
+title: "Identity And Access Management And Its Role In Cloud Security"
 date: 2020-11-05
 ---
 
